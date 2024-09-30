@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SMS Spam Classifier</title>
+    <style>
+      body {
+        background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"); /* Replace 'background.jpg' with the actual image path */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+        opacity:0.8;
+      }
+
+      #header {
+        background-color: rgb(139, 235, 231);
+        text-align: center;
+        padding: 10px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 50px;
+        font: solid;
+        font: bold;
+        color: black;
+      }
+
+      #prediction-heading {
+        font-size: 24px;
+        font: solid;
+        font: bold;
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      #prediction-result {
+        font-size: 36px;
+        font: solid;
+        font: bold;
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        color: green;
+      }
+
+      #message-form {
+        text-align: center;
+        margin-top: 40px;
+        z-index: 5;
+      }
+
+      #message-input {
+        width: 80%;
+        max-width: 500px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      #submit-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      SMS Spam Classifier
+    </div>
+    <h2 id="prediction-heading">Prediction:</h2>
+    {% if prediction %}
+      <div id="prediction-result">{{ prediction }}</div>
+    {% endif %}
+    <div id="message-form">
+      <form action="/" method="post">
+        <input type="text" id="message-input" name="message" placeholder="Enter the message...">
+        <br>
+        <button type="submit" id="submit-button">Predict</button>
+      </form>
+    </div>
+  </body>
+</html>

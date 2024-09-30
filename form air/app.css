@@ -1,0 +1,105 @@
+:root{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: bisque;
+    font-size: 400;
+    margin: 1rem;
+    line-height: 1.6;
+    background: url(https://images.pexels.com/photos/16968296/pexels-photo-16968296/free-photo-of-blogger-yokohama.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1://images.pexels.com/photos/16870746/pexels-photo-16870746/free-photo-of-cold-snow-wood-light.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    margin:0;
+}
+header{
+    /* background-color:rgb(109, 105, 218) ; */
+    /* margin: 2rem 1rem 1rem 1rem; */
+}
+#heading {
+    /* background-color: rgb(223, 171, 171); */
+}
+
+* ,::before,::after{
+    box-sizing: border-box;
+}
+input,textarea,select{
+
+    font-family: inherit;
+}
+button{
+    line-height: 1;
+
+}
+
+/* main portaion */
+.container{
+margin: 12px auto;
+}
+
+.text-center{
+  text-align: center;  
+}
+
+.para{
+    /* background:green; */
+    position: relative;
+    bottom: 12px;
+    margin: 1rem auto;
+    text-shadow: 1px 1px black;
+}
+html{
+    font-size: 16px;
+}
+h1{
+     font-weight: 400;
+     line-height: 1.2;
+     margin: 0;
+     text-shadow: 1px 1px #233423;
+}
+
+
+/* form section */
+form{
+    background: rgb(128, 128, 203);
+    padding: 2.5rem 0.625rem;
+    border-radius: 12px;
+    width: 60%;
+    margin: auto;
+    /* line-height: 1; */
+    
+}
+.form-group{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    /* margin: 2rem; */
+   
+}
+.form-group p{
+    /* line-height: ; */
+    margin:2px 1px;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    height: 2.3rem;
+    padding: 2px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+button{
+    height: 32px;
+}
+
+.btn-btn1{
+    background-color: red;
+    border-radius: 5px;
+}.btn-btn1:hover{
+    background-color: green;
+    cursor: pointer;
+}

@@ -1,0 +1,221 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>function</h1>
+</body>
+<script>
+    //parameter
+    //     function sumOftwoNumber (num1, num2){
+    //     return num1+ num2;
+    // }
+
+    //  const sum =sumOftwoNumber(6,7)
+    // //6,7 argument
+    //  console.log(sum)
+    // const sumOftwoNumber = function (num1, num2) {
+    //     return num1 + num2;
+    // }
+
+    // const ans = sumOftwoNumber(6, 7)
+    // console.log(ans)
+    // //6,7 argument
+    // //  console.log(sum);
+
+    // const singsab = () => {
+    //     console.log("happy birthday to you");
+    // }
+    // singsab();
+
+    // const Sum = (num1, num2) => num1 + num2
+    // const array = sumOftwoNumber(5, 6,);
+    // console.log(array)
+
+
+    // function isEven (num){
+    //     if(num%2==0){
+    //         return true
+    //     }
+    //     return false
+    // }
+    // console.log(isEven(7))
+    // function FindTarger(array,number){
+    //     for(let i=0; i<array.length; i++){
+    //         if(array[i]===number){
+    //             return 1;
+    //         }
+    //     } return -1
+
+    // }
+    // const MyArray=[1,2,3,4,5,6,66];
+    // const target= FindTarger(MyArray,6);
+    // console.log(target)
+
+
+    // const users = [
+
+    //     { firstname: "rishabh", age: 12 },
+    //     { firstname: "arishabh", age: 21 },
+    //     { firstname: "Preeti", age: 24 }
+    // ]
+    // users.forEach((users, index) => {
+    //     console.log(users.firstname)
+
+    // });
+
+
+    // for (let user of users) {
+    //     console.log(user.firstname)
+    // }
+
+    // map method
+
+    // const users_3 = [
+    //     { firstname: "Rishabh", age: 23 },
+    //     { firstname: "Rajat", age: 13 },
+    //     { firstname: "preeti", age: 24 },
+    //     { firstname: "pooja", age: 21 }
+    // ]
+    // const colllect = users_3.map((userxx ) => {
+    //     return userxx.firstname;
+    // })
+    // console.log(colllect)
+
+
+//reduce
+
+// const number11=[1,2,3,4,5,6]
+
+// const sum = number11.reduce((accumlatoe,cureent)=>{
+//     return accumlatoe+cureent
+// });
+// console.log(sum);
+
+
+
+// acccumatr current retuen
+// 1           2       3
+// 3           3        6
+// 6            4        10
+//  10           5        15
+// 15              6       21
+
+//filter method
+
+// const numbers=[1,2,3,4,5,6,7]
+// const isevn= numbers.filter((Rishabh)=>{
+//   return  Rishabh %2 ===0
+// // })
+// console.log(isevn)
+
+
+// function personInfo(){
+//     console.log(`mu name is ${this.name} and my age is ${this.age}`)
+// }
+//  const persone1={
+//     name:"Rishabh",
+//     age:13,
+//     about:personInfo
+
+//  }
+//  const persone2={
+//     name:"Ananya",
+//     age:23,
+//     about:personInfo
+
+//  }
+
+//  persone1.about();
+//  persone2.about();
+
+
+
+
+//  call method
+
+// function about( husband , wife){
+//     console.log(this.name, this.age , husband , wife)
+// }
+
+// const front= {
+//     name:"rishabhf",
+//     age:89,
+// }
+
+
+// const fronr={
+//     name:"sfsdkfh",
+//     age:34,
+// }
+// about.call(fronr,"rishah","Not found");
+
+// apply method
+// about.apply(fronr,["rishah","Not found"]);
+//Bind method
+// it simplw just return a function
+
+//  const fun=about.bind(fronr,"rishabh");
+//  fun();
+
+// const multiply=[2,3,4,5,67,7]
+// multiply.forEach(function(count){
+//     console.log(`the number is multiply by ${count*2}`)
+// })
+// const multiply2=[2,3,4,5,67,7];
+// multiply2.forEach(function(eeti){
+//     console.log(eeti*4)
+// })
+
+
+// function mydad(name){
+//     console.log("inside my dad");;
+//     console.log(`inside my dad name i ${name}`);
+// }
+
+// function mydad2(callback){
+//     console.log("hello my name is Mr. Raghvendra Dubey");
+//     console.log("Rishabh");
+//mydad2(mydad);
+// }
+//  -------------------------------------- map method------------------------------------
+// const number=[2,3,4,5,6]
+// const Squrenumber= number.map((rishabh)=>{
+//     return rishabh*rishabh
+// })
+// console.log(Squrenumber )
+
+
+
+// --------------------filter method----------------------
+
+// const number= [2,3,4,5,6,7,8]
+
+// const Iseven= function(numbers){
+//     return numbers%2===0
+// }
+
+// const print =number.filter(Iseven);
+// console.log(print);
+
+
+// -----------------------------Reduce-----------------------------------------------
+// const numberr=[2,4,5,6,7,8];
+//  const sum= numberr.reduce((accumlator , currentvalue)=>{
+//     return accumlator+currentvalue
+//  })
+//  console.log(sum)
+// optional chainig
+
+const user ={
+    name:"Rishabh",
+    address: {housenumnever:'1234'}
+}
+console.log(user?.housenumnever);
+</script>
+
+</html>
